@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 export default function Home() {
-  const [tasks, setTasks] = useState([]);
+const [tasks, setTasks] = useState<string[]>([]);
   const [input, setInput] = useState("");
 
   const addTask = () => {
